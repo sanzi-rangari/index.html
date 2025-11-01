@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Guidance Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Career Guidance Portal</h1>
+    <p>Your personalized career suggestion assistant</p>
+  </header>
+
+  <section class="quiz-section">
+    <h2>Find the Right Career for You</h2>
+    <form id="careerForm">
+      <label>1️⃣ What is your favorite subject?</label>
+      <select id="subject">
+        <option value="science">Science</option>
+        <option value="math">Mathematics</option>
+        <option value="arts">Arts</option>
+        <option value="commerce">Commerce</option>
+      </select>
+
+      <label>2️⃣ What kind of work do you enjoy?</label>
+      <select id="interest">
+        <option value="research">Research & Experiments</option>
+        <option value="creative">Creative & Design</option>
+        <option value="business">Business & Management</option>
+        <option value="technology">Technology & Coding</option>
+      </select>
+
+      <label>3️⃣ How do you prefer working?</label>
+      <select id="style">
+        <option value="team">In a team</option>
+        <option value="alone">Individually</option>
+        <option value="field">In the field</option>
+        <option value="office">In an office</option>
+      </select>
+
+      <button type="button" onclick="suggestCareer()">Get Career Suggestion</button>
+    </form>
+  </section>
+
+  <section id="result" class="result-section">
+    <h2>Your Suggested Career:</h2>
+    <p id="careerOutput">Fill out the form to see your career path!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Career Guidance Portal | Designed by You</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
